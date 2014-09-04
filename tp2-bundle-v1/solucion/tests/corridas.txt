@@ -1,0 +1,5 @@
+0 cropflip 64 120 16 15
+5 sierpinski
+0 bandas
+5 mblur
+
