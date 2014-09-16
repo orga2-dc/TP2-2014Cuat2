@@ -1,0 +1,196 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_PROGRAM_AUTHOR	Darren Hiebert	/dhiebert@users.sourceforge.net/
+!_TAG_PROGRAM_NAME	Exuberant Ctags	//
+!_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
+!_TAG_PROGRAM_VERSION	5.9~svn20110310	//
+ARCH	Makefile	/^ARCH = $(shell uname -i)$/;"	m
+ASM	Makefile	/^ASM = nasm$/;"	m
+ASMFLAGS	Makefile	/^ASMFLAGS = $(ASMFLAGS32)$/;"	m
+ASMFLAGS	Makefile	/^ASMFLAGS = $(ASMFLAGS64)$/;"	m
+ASMFLAGS32	Makefile	/^ASMFLAGS32 = -felf -g -F dwarf$/;"	m
+ASMFLAGS64	Makefile	/^ASMFLAGS64 = -felf64 -g -F dwarf$/;"	m
+ASMOBJS	Makefile	/^ASMOBJS = cropflip_asm.o \\$/;"	m
+BIN	Makefile	/^BIN = tp2$/;"	m
+BINC	Makefile	/^BINC = tpcatedra$/;"	m
+BIN_DIR	Makefile	/^BIN_DIR = ..\/bin$/;"	m
+BOBJS	Makefile	/^BOBJS= $(COBJS) filtros_dummy.o #filtros_dummy.o tiene las definiciones de las funciones en asm.$/;"	m
+BUNDLEDIR	Makefile	/^BUNDLEDIR = ..\/..\/tp2-bundle-v$(VERSION)$/;"	m
+CFLAGS	Makefile	/^CFLAGS   = $(CFLAGS32)$/;"	m
+CFLAGS	Makefile	/^CFLAGS   = $(CFLAGS64)$/;"	m
+CFLAGS32	Makefile	/^CFLAGS32 = -ggdb -Wall -Wno-unused-parameter -std=c99 -pedantic$/;"	m
+CFLAGS64	Makefile	/^CFLAGS64 = -ggdb -Wall -std=c99 -pedantic -m64$/;"	m
+COBJS	Makefile	/^COBJS = tp2.o cli.o utils.o opencv_wrapper.o \\$/;"	m
+C_ASM	tp2.h	63;"	d
+CvVideoWriter	opencv_wrapper.c	/^typedef struct CvVideoWriter CvVideoWriter;$/;"	t	typeref:struct:CvVideoWriter	file:
+DBG	Makefile	/^DBG = gdb$/;"	m
+DECLARAR_FILTRO	tp2.h	76;"	d
+DEFINIR_FILTRO	tp2.h	80;"	d
+FILTRO_ASM	tp2.h	8;"	d
+FILTRO_C	tp2.h	7;"	d
+FLAGS	Makefile	/^	make CFLAGS='$(CFLAGS) -O3' $(BINC)$/;"	m
+MAX	mblur_c.c	5;"	d	file:
+MEDIR_TIEMPO	tiempo.h	11;"	d
+MEDIR_TIEMPO_START	tiempo.h	28;"	d
+MEDIR_TIEMPO_STOP	tiempo.h	36;"	d
+MIN	mblur_c.c	4;"	d	file:
+OBJS	Makefile	/^OBJS = $(COBJS) $(ASMOBJS)$/;"	m
+OPENCV_LIB	Makefile	/^OPENCV_LIB = `pkg-config --cflags --libs opencv`$/;"	m
+P	mblur_c.c	7;"	d	file:
+SWITCH_C_ASM	tp2.h	62;"	d
+UBUNTU	Makefile	/^UBUNTU = $(shell lsb_release -sd)$/;"	m
+VERSION	Makefile	/^VERSION = 1$/;"	m
+__OPENCL_WRAPPER__H__	opencv_wrapper.h	2;"	d
+__TIEMPO_H__	tiempo.h	2;"	d
+__TP2__H__	tp2.h	3;"	d
+__UTILS__H__	utils.h	2;"	d
+a	tp2.h	/^	unsigned char b, g, r, a;$/;"	m	struct:bgra_t
+a	tp2.h	/^	unsigned int b, g, r, a;$/;"	m	struct:bgra32_t
+a	tp2.h	/^	unsigned short b, g, r, a;$/;"	m	struct:bgra16_t
+abrir_video	opencv_wrapper.c	/^CvCapture *abrir_video(const char *archivo_entrada) {$/;"	f
+abrir_writer	opencv_wrapper.c	/^struct CvVideoWriter *abrir_writer(const char *archivo_salida, int fps, CvSize size) {$/;"	f
+aplicador	tp2.h	/^	aplicador_fn_t       *aplicador;$/;"	m	struct:filtro_t
+aplicador_fn_t	tp2.h	/^typedef void (aplicador_fn_t) (configuracion_t*);$/;"	t
+aplicar_bandas	bandas.c	/^void aplicar_bandas(configuracion_t *config)$/;"	f
+aplicar_cropflip	cropflip.c	/^void aplicar_cropflip(configuracion_t *config)$/;"	f
+aplicar_mblur	mblur.c	/^void aplicar_mblur(configuracion_t *config)$/;"	f
+aplicar_sierpinski	sierpinski.c	/^void aplicar_sierpinski(configuracion_t *config)$/;"	f
+archivo_entrada	tp2.h	/^	char *archivo_entrada;$/;"	m	struct:configuracion_t
+archivo_salida	tp2.h	/^	char  archivo_salida[255];$/;"	m	struct:configuracion_t
+ayuda	tp2.h	/^	mostrador_ayuda_fn_t *ayuda;$/;"	m	struct:filtro_t
+ayuda_bandas	bandas.c	/^void ayuda_bandas()$/;"	f
+ayuda_cropflip	cropflip.c	/^void ayuda_cropflip()$/;"	f
+ayuda_mblur	mblur.c	/^void ayuda_mblur()$/;"	f
+ayuda_sierpinski	sierpinski.c	/^void ayuda_sierpinski()$/;"	f
+b	tp2.h	/^	unsigned char b, g, r, a;$/;"	m	struct:bgra_t
+b	tp2.h	/^	unsigned char b, g, r;$/;"	m	struct:bgr_t
+b	tp2.h	/^	unsigned int b, g, r, a;$/;"	m	struct:bgra32_t
+b	tp2.h	/^	unsigned int b, g, r;$/;"	m	struct:bgr32_t
+b	tp2.h	/^	unsigned short b, g, r, a;$/;"	m	struct:bgra16_t
+b	tp2.h	/^	unsigned short b, g, r;$/;"	m	struct:bgr16_t
+bandas_asm	bandas_asm.asm	/^bandas_asm:$/;"	l
+bandas_asm	filtros_dummy.asm	/^bandas_asm:$/;"	l
+bandas_c	bandas_c.c	/^void bandas_c ($/;"	f
+bandas_fn_t	bandas.c	/^typedef void (bandas_fn_t) (unsigned char*, unsigned char*, int, int, int, int);$/;"	t	file:
+basename	utils.c	/^const char *basename(const char *path)$/;"	f
+bgr16_t	tp2.h	/^typedef struct bgr16_t {$/;"	s
+bgr16_t	tp2.h	/^} __attribute__((packed)) bgr16_t;$/;"	t	typeref:struct:bgr16_t
+bgr32_t	tp2.h	/^typedef struct bgr32_t {$/;"	s
+bgr32_t	tp2.h	/^} __attribute__((packed)) bgr32_t;$/;"	t	typeref:struct:bgr32_t
+bgr_t	tp2.h	/^typedef struct bgr_t {$/;"	s
+bgr_t	tp2.h	/^} __attribute__((packed)) bgr_t;$/;"	t	typeref:struct:bgr_t
+bgra16_t	tp2.h	/^typedef struct bgra16_t {$/;"	s
+bgra16_t	tp2.h	/^} __attribute__((packed)) bgra16_t;$/;"	t	typeref:struct:bgra16_t
+bgra32_t	tp2.h	/^typedef struct bgra32_t {$/;"	s
+bgra32_t	tp2.h	/^} __attribute__((packed)) bgra32_t;$/;"	t	typeref:struct:bgra32_t
+bgra_t	tp2.h	/^typedef struct bgra_t {$/;"	s
+bgra_t	tp2.h	/^} __attribute__((packed)) bgra_t;$/;"	t	typeref:struct:bgra_t
+buffer_info_t	tp2.h	/^typedef struct buffer_info_t$/;"	s
+buffer_info_t	tp2.h	/^} buffer_info_t;$/;"	t	typeref:struct:buffer_info_t
+bytes	tp2.h	/^	unsigned char *bytes;$/;"	m	struct:buffer_info_t
+carpeta_salida	tp2.h	/^	char *carpeta_salida;$/;"	m	struct:configuracion_t
+configuracion_t	tp2.h	/^typedef struct configuracion_t$/;"	s
+configuracion_t	tp2.h	/^} configuracion_t;$/;"	t	typeref:struct:configuracion_t
+copiar_bordes	utils.c	/^void copiar_bordes ($/;"	f
+correr_filtro_imagen	tp2.c	/^void correr_filtro_imagen(configuracion_t *config, aplicador_fn_t aplicador)$/;"	f
+correr_filtro_video	tp2.c	/^void correr_filtro_video(configuracion_t *config, aplicador_fn_t aplicador)$/;"	f
+cropflip_asm	cropflip_asm.asm	/^cropflip_asm:$/;"	l
+cropflip_asm	filtros_dummy.asm	/^cropflip_asm:$/;"	l
+cropflip_c	cropflip_c.c	/^void cropflip_c    ($/;"	f
+cropflip_fn_t	cropflip.c	/^typedef void (cropflip_fn_t) (unsigned char*, unsigned char*, int, int, int, int, int, int, int, int);$/;"	t	file:
+cropflip_params_t	cropflip.c	/^typedef struct cropflip_params_t {$/;"	s	file:
+cropflip_params_t	cropflip.c	/^} cropflip_params_t;$/;"	t	typeref:struct:cropflip_params_t	file:
+detectar_filtro	tp2.c	/^filtro_t* detectar_filtro(configuracion_t *config)$/;"	f
+divisores	mblur_asm.asm	/^divisores: dd 0.2, 0.2, 0.2, 0.2$/;"	d
+dst	tp2.h	/^	buffer_info_t src, dst;$/;"	m	struct:configuracion_t
+dstImg	opencv_wrapper.c	/^IplImage      *dstImg = NULL;$/;"	v
+dstVid	opencv_wrapper.c	/^CvVideoWriter *dstVid = NULL;$/;"	v
+es_video	tp2.h	/^	bool es_video;$/;"	m	struct:configuracion_t
+extra	cropflip.c	/^cropflip_params_t extra;$/;"	v
+extra_archivo_salida	tp2.h	/^	char *extra_archivo_salida;$/;"	m	struct:configuracion_t
+extra_config	tp2.h	/^	void *extra_config;$/;"	m	struct:configuracion_t
+filtro_t	tp2.h	/^typedef struct filtro_t {$/;"	s
+filtro_t	tp2.h	/^} filtro_t;$/;"	t	typeref:struct:filtro_t
+frames	tp2.h	/^	bool frames;$/;"	m	struct:configuracion_t
+g	tp2.h	/^	unsigned char b, g, r, a;$/;"	m	struct:bgra_t
+g	tp2.h	/^	unsigned char b, g, r;$/;"	m	struct:bgr_t
+g	tp2.h	/^	unsigned int b, g, r, a;$/;"	m	struct:bgra32_t
+g	tp2.h	/^	unsigned int b, g, r;$/;"	m	struct:bgr32_t
+g	tp2.h	/^	unsigned short b, g, r, a;$/;"	m	struct:bgra16_t
+g	tp2.h	/^	unsigned short b, g, r;$/;"	m	struct:bgr16_t
+global	bandas_asm.asm	/^global bandas_asm$/;"	l
+global	cropflip_asm.asm	/^global cropflip_asm$/;"	l
+global	filtros_dummy.asm	/^global bandas_asm$/;"	l
+global	filtros_dummy.asm	/^global cropflip_asm$/;"	l
+global	filtros_dummy.asm	/^global mblur_asm$/;"	l
+global	filtros_dummy.asm	/^global sierpinski_asm$/;"	l
+global	mblur_asm.asm	/^global mblur_asm$/;"	l
+global	sierpinski_asm.asm	/^global sierpinski_asm$/;"	l
+guardar_mensaje_en_archivo	utils.c	/^void guardar_mensaje_en_archivo(configuracion_t *config, unsigned char *mensaje_salida)$/;"	f
+height	tp2.h	/^	int width, height, width_with_padding;$/;"	m	struct:buffer_info_t
+imprimir_ayuda	cli.c	/^void imprimir_ayuda ( char *nombre_programa) {$/;"	f
+imprimir_tiempos_ejecucion	tp2.c	/^void imprimir_tiempos_ejecucion(unsigned long long int start, unsigned long long int end, int cant_iteraciones) {$/;"	f
+lector_params_fn_t	tp2.h	/^typedef void (lector_params_fn_t) (configuracion_t *config, int, char *[]);$/;"	t
+leer_params	tp2.h	/^	lector_params_fn_t   *leer_params;$/;"	m	struct:filtro_t
+leer_params_bandas	bandas.c	/^void leer_params_bandas(configuracion_t *config, int argc, char *argv[]) {$/;"	f
+leer_params_cropflip	cropflip.c	/^void leer_params_cropflip(configuracion_t *config, int argc, char *argv[]) {$/;"	f
+leer_params_mblur	mblur.c	/^void leer_params_mblur(configuracion_t *config, int argc, char *argv[]) {$/;"	f
+leer_params_sierpinski	sierpinski.c	/^void leer_params_sierpinski(configuracion_t *config, int argc, char *argv[]) {$/;"	f
+main	tp2.c	/^int main( int argc, char** argv ) {$/;"	f
+mascara_128	bandas_asm.asm	/^mascara_128: dd 0x80808080, 0x80808080, 0x80808080, 0x80808080$/;"	d
+mascara_192	bandas_asm.asm	/^mascara_192: dd 0xC0C0C0C0, 0xC0C0C0C0, 0xC0C0C0C0, 0xC0C0C0C0$/;"	d
+mascara_255	bandas_asm.asm	/^mascara_255:$/;"	l
+mascara_287	bandas_asm.asm	/^mascara_287: dw 287, 287, 287, 287,   287, 287, 287, 287$/;"	d
+mascara_479	bandas_asm.asm	/^mascara_479: dw 479, 479, 479, 479,   479, 479, 479, 479$/;"	d
+mascara_64	bandas_asm.asm	/^mascara_64:  dd 0x40404040, 0x40404040, 0x40404040, 0x40404040$/;"	d
+mascara_671	bandas_asm.asm	/^mascara_671: dw 671, 671, 671, 671,   671, 671, 671, 671$/;"	d
+mascara_95	bandas_asm.asm	/^mascara_95:  dw  95,  95,  95,  95,    95,  95,  95,  95$/;"	d
+mascara_borra_alfa	bandas_asm.asm	/^mascara_borra_alfa: dd 0x00FFFFFF, 0x00FFFFFF, 0x00FFFFFF, 0x00FFFFFF$/;"	d
+mascara_shuf_comp	bandas_asm.asm	/^mascara_shuf_comp:  dd 0x00000000, 0x02020202, 0x04040404, 0x06060606$/;"	d
+mblur_asm	filtros_dummy.asm	/^mblur_asm:$/;"	l
+mblur_asm	mblur_asm.asm	/^mblur_asm:$/;"	l
+mblur_c	mblur_c.c	/^void mblur_c    ($/;"	f
+mblur_fn_t	mblur.c	/^typedef void (mblur_fn_t) (unsigned char*, unsigned char*, int, int, int, int);$/;"	t	file:
+mostrador_ayuda_fn_t	tp2.h	/^typedef void (mostrador_ayuda_fn_t) (void);$/;"	t
+negador	bandas_asm.asm	/^negador:     dd 0xFFFFFFFF, 0xFFFFFFFF, 0xFFFFFFFF, 0xFFFFFFFF$/;"	d
+nombre	tp2.h	/^	bool nombre;$/;"	m	struct:configuracion_t
+nombre	tp2.h	/^	char *nombre;$/;"	m	struct:filtro_t
+nombre_filtro	tp2.h	/^	char *nombre_filtro;$/;"	m	struct:configuracion_t
+offsetx	cropflip.c	/^	int tamx, tamy, offsetx, offsety;$/;"	m	struct:cropflip_params_t	file:
+offsety	cropflip.c	/^	int tamx, tamy, offsetx, offsety;$/;"	m	struct:cropflip_params_t	file:
+opencv_abrir_destino	opencv_wrapper.c	/^void opencv_abrir_destino(int width, int height, configuracion_t *config) {$/;"	f
+opencv_abrir_imagenes	opencv_wrapper.c	/^void opencv_abrir_imagenes(configuracion_t *config)$/;"	f
+opencv_abrir_video	opencv_wrapper.c	/^void opencv_abrir_video(configuracion_t *config)$/;"	f
+opencv_frames_do	opencv_wrapper.c	/^void opencv_frames_do(configuracion_t *config, aplicador_fn_t aplicador)$/;"	f
+opencv_liberar_imagenes	opencv_wrapper.c	/^void opencv_liberar_imagenes(configuracion_t *config)$/;"	f
+opencv_liberar_video	opencv_wrapper.c	/^void opencv_liberar_video(configuracion_t *config)$/;"	f
+pintar_bordes_negro	utils.c	/^void pintar_bordes_negro(unsigned char *frame, int m, int n) {$/;"	f
+procesar_opciones	cli.c	/^void procesar_opciones(int argc, char **argv, configuracion_t *config)$/;"	f
+r	tp2.h	/^	unsigned char b, g, r, a;$/;"	m	struct:bgra_t
+r	tp2.h	/^	unsigned char b, g, r;$/;"	m	struct:bgr_t
+r	tp2.h	/^	unsigned int b, g, r, a;$/;"	m	struct:bgra32_t
+r	tp2.h	/^	unsigned int b, g, r;$/;"	m	struct:bgr32_t
+r	tp2.h	/^	unsigned short b, g, r, a;$/;"	m	struct:bgra16_t
+r	tp2.h	/^	unsigned short b, g, r;$/;"	m	struct:bgr16_t
+section	bandas_asm.asm	/^section .data$/;"	l
+section	bandas_asm.asm	/^section .text$/;"	l
+section	cropflip_asm.asm	/^section .text$/;"	l
+section	mblur_asm.asm	/^section .data$/;"	l
+section	mblur_asm.asm	/^section .text$/;"	l
+section	sierpinski_asm.asm	/^section .data$/;"	l
+section	sierpinski_asm.asm	/^section .text$/;"	l
+sierpinski_asm	filtros_dummy.asm	/^sierpinski_asm:$/;"	l
+sierpinski_asm	sierpinski_asm.asm	/^sierpinski_asm:$/;"	l
+sierpinski_c	sierpinski_c.c	/^void sierpinski_c    ($/;"	f
+sierpinski_fn_t	sierpinski.c	/^typedef void (sierpinski_fn_t) ( unsigned char*, unsigned char*, int, int, int, int);$/;"	t	file:
+src	tp2.h	/^	buffer_info_t src, dst;$/;"	m	struct:configuracion_t
+srcImg	opencv_wrapper.c	/^IplImage      *srcImg = NULL;$/;"	v
+srcVid	opencv_wrapper.c	/^CvCapture     *srcVid = NULL;$/;"	v
+tamx	cropflip.c	/^	int tamx, tamy, offsetx, offsety;$/;"	m	struct:cropflip_params_t	file:
+tamy	cropflip.c	/^	int tamx, tamy, offsetx, offsety;$/;"	m	struct:cropflip_params_t	file:
+tipo	tp2.h	/^	unsigned int tipo;$/;"	m	struct:buffer_info_t
+tipo_filtro	tp2.h	/^	int  tipo_filtro;$/;"	m	struct:configuracion_t
+verbose	tp2.h	/^	bool verbose;$/;"	m	struct:configuracion_t
+voltear_horizontal	utils.c	/^void voltear_horizontal ($/;"	f
+width	tp2.h	/^	int width, height, width_with_padding;$/;"	m	struct:buffer_info_t
+width_with_padding	tp2.h	/^	int width, height, width_with_padding;$/;"	m	struct:buffer_info_t

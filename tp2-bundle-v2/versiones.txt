@@ -1,0 +1,2 @@
+v2 - Mini errores del enunciado y arreglado los tests de la catedra
+v1 - version inicial
